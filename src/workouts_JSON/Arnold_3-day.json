@@ -1,0 +1,52 @@
+{
+    "name": "Arnold 3-day",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Description for Day 1",
+        "difficulty": "Beginner",
+        "type": "Bodybuilding",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "4", "reps": "10"},
+          {"exerciseName": "Wide Grip Bench Press", "sets": "3", "reps": "10"},
+          {"exerciseName": "Chin Ups", "sets": "3", "reps": "failure"},
+          {"exerciseName": "Behind the Neck Overhead Press", "sets": "4", "reps": "10"},
+          {"exerciseName": "Barbell Curl", "sets": "3", "reps": "10"},
+          {"exerciseName": "Bent Knee Sit Up", "sets": "3-4", "reps": "failure"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Description for Day 2",
+        "difficulty": "Beginner",
+        "type": "Bodybuilding",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "4", "reps": "10"},
+          {"exerciseName": "Wide Grip Bench Press", "sets": "3", "reps": "10"},
+          {"exerciseName": "Chin Ups", "sets": "3", "reps": "failure"},
+          {"exerciseName": "Behind the Neck Overhead Press", "sets": "4", "reps": "10"},
+          {"exerciseName": "Barbell Curl", "sets": "3", "reps": "10"},
+          {"exerciseName": "Bent Knee Sit Up", "sets": "3-4", "reps": "failure"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Description for Day 3",
+        "difficulty": "Beginner",
+        "type": "Bodybuilding",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "4", "reps": "10"},
+          {"exerciseName": "Wide Grip Bench Press", "sets": "3", "reps": "10"},
+          {"exerciseName": "Chin Ups", "sets": "3", "reps": "failure"},
+          {"exerciseName": "Behind the Neck Overhead Press", "sets": "4", "reps": "10"},
+          {"exerciseName": "Barbell Curl", "sets": "3", "reps": "10"},
+          {"exerciseName": "Bent Knee Sit Up", "sets": "3-4", "reps": "failure"}
+        ]
+      }
+    ]
+  }
+  

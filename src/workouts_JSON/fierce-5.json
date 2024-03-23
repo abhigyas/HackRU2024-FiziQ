@@ -1,13 +1,13 @@
 {
-  "name": "Workout Plan",
+  "name": "Fierce 5",
   "user": "user_id_here",
   "workouts": [
       {
           "workoutName": "Day 1",
           "description": "Legs and Upper Body",
-          "difficulty": "Intermediate",
-          "type": "Strength Training",
-          "numberOfDays": "1",
+          "difficulty": "Beginner",
+          "type": "Bodybuilding",
+          "numberOfDays": "2",
           "exercises": [
               {
                   "exerciseName": "Squat",
@@ -44,9 +44,9 @@
       {
           "workoutName": "Day 2",
           "description": "Full Body",
-          "difficulty": "Intermediate",
-          "type": "Strength Training",
-          "numberOfDays": "1",
+          "difficulty": "Beginner",
+          "type": "Bodybuilding",
+          "numberOfDays": "2",
           "exercises": [
               {
                   "exerciseName": "Front Squat",

@@ -26,7 +26,7 @@ function Home() {
             console.log(response);
             return response.json();
           })
-          .then(data => setPosts(data))
+          .then(data => setPosts(data.reverse()))
           .catch(error => console.error('Error:', error));
       }, []);
 

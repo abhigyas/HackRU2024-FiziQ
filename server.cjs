@@ -77,6 +77,7 @@ const exerciseSchema = new mongoose.Schema({
    const Workout = mongoose.model("Workout", workoutPlanSchema);
 const userSchema = new mongoose.Schema({
     email: String,
+    username: String,
     password: String,
     workoutPlan: { type: mongoose.Schema.Types.ObjectId, ref: 'WorkoutPlan' }
 });

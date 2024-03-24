@@ -1,7 +1,6 @@
 import React from 'react';
 
 function FeedElement({ username, description, img }) {
-  // Convert the array of numbers back into a Buffer
   const imgBuffer = Buffer.from(img.data.data);
 
   return (

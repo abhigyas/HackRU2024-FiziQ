@@ -15,6 +15,42 @@ mongoose.connect("mongodb+srv://kashyaptbusiness:fTzsf8LFjh30g35e@fiziq.mkrrmei.
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
+var imageSchema = new mongoose.Schema({
+    description: String,
+    img:{
+        data: Buffer,
+        contentType: String
+    }
+});
+
+const Post = mongoose.model("Post", imageSchema);
+
+var bodyParser = require('body-parser');
+var fs = require('fs');
+var path = require('path');
+app.set("view engine", "ejs");
+require('dotenv').config();
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json())
+ 
+var multer = require('multer');
+
+var storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        cb(null, 'uploads')
+    },
+    filename: (req, file, cb) => {
+        cb(null, file.fieldname + '-' + Date.now())
+    }
+});
+var upload = multer({ storage: storage });
+
+
+
+ 
+
+
+
 const workoutSchema = new mongoose.Schema({
     name: String,
     user: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
@@ -38,6 +74,7 @@ const workoutSchema = new mongoose.Schema({
 
 const userSchema = new mongoose.Schema({
     email: String,
+    username: String,
     password: String,
     workouts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Workout' }]
 });
@@ -48,7 +85,8 @@ const Workout = mongoose.model("Workout", workoutSchema);
 app.use(express.json());
 
 app.post("/api/register", async(req, res)=>{
-    const { email, password } = req.body;
+    const { email, username, password } = req.body;
+    
     const hashedPassword = await bcrypt.hash(password, 10);
     try{
         const oldUser = await User.findOne({ email });
@@ -56,7 +94,8 @@ app.post("/api/register", async(req, res)=>{
             return res.status(409).send("User already exists. Please login.");
         }
             await User.create({
-                email, 
+                email,
+                username, 
                 password: hashedPassword
             })
             res.status(201).send("User created successfully.");
@@ -209,4 +248,63 @@ app.delete("/api/delete-workout/:id", async(req, res)=>{
         res.status(500).send("Internal Server Error");
     }
 });
+
+
+
+
+
+
+
+
+app.get('/api/get-post', (req, res) => {
+    imageSchema.find({})
+    .then((data, err)=>{
+        if(err){
+            console.log(err);
+        }
+        res.render('imagepage',{items: data})
+    })
+});
+// app.post('/api/create-post', upload.single('image'), (req, res, next) => {
+ 
+//     var obj = {
+//         desc: req.body.desc,
+//         img: {
+//             data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
+//             contentType: 'image/png'
+//         }
+//     }
+//     imageSchema.create(obj)
+//     .then ((err, item) => {
+//         if (err) {
+//             console.log(err);
+//         }
+//         else {
+//             res.redirect('/');
+//         }
+//     });
+// });
+app.post('/api/create-post', upload.single('image'), (req, res, next) => {
+ 
+    var obj = {
+        desc: req.body.desc,
+        img: {
+            data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
+            contentType: 'image/png'
+        }
+    }
+    Post.create(obj)
+    .then ((err, item) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            res.redirect('/');
+        }
+    });
+});
+
+
+
+
 

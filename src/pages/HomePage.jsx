@@ -1,12 +1,37 @@
-import React from 'react'
+import {React, useState, useRef, useEffect} from 'react'
 import '../css/homePage.css'
 import logo from '../icons/logo.png';
 import dumbbell from '../icons/dumbbell.png';
 import profile from '../icons/profile.png';
+import Post from '../components/createPost.jsx';
+import CreatePost from '../components/createPost.jsx';
 
 
 
 function Home() {
+    const [toggle, setToggle] = useState(false);
+    const modalRef = useRef(null);
+
+    const togglePost = (e) => {
+        e.preventDefault()
+        e.stopPropagation()
+        setToggle(!toggle)
+    }
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                setToggle(false);
+            }
+        };
+        if (toggle) {
+            document.addEventListener('click', handleClickOutside);
+        } else {
+            document.removeEventListener('click', handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        }
+    }, [toggle]);
   return (
     <>
       <div className="container">
@@ -55,8 +80,8 @@ function Home() {
                         </a>
                     </li>
                     <li className="nav-item" id='nav-link-post-button'>
-                        <a  className="nav-link-button">
-                            <button className="create-post-button">Post</button>
+                        <a onClick={togglePost} className="nav-link-button">
+                            <button  className="create-post-button">Post</button>
                         </a>
                     </li>
 
@@ -92,11 +117,12 @@ function Home() {
             <div className="beginner-workouts-header">
                 <h1>Beginner Workouts</h1>
             </div>
-            <a  className="view-all-workouts">
+            <a className="view-all-workouts">
                 <button className="view-all-workouts-button">View all workouts</button>
             </a>
         </div>
       </div>
+      {toggle && <CreatePost ref={modalRef}/> }
     </>
   )
 }

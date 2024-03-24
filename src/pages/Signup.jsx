@@ -12,6 +12,7 @@ import logo from '../icons/logo.png';
 function Signup() {
     const navigate = useNavigate();
     const [email, setemail] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [showAlert, setShowAlert] = useState(false); 
     const [confirmPassword, setConfirmPassword] = useState("");
@@ -28,11 +29,12 @@ function Signup() {
         }, 5000);
         return;
       }
-      axios.post('http://localhost:443/api/register', {email, password})
+      axios.post('http://localhost:443/api/register', {email, username, password})
       .then((response)=>{
         console.log(response.data);
         const userData = {
           email: email,
+          username: username,
         };
         localStorage.setItem('userData', JSON.stringify(userData));
         navigate("/login");
@@ -55,6 +57,16 @@ function Signup() {
                   style={{ fontFamily: 'sans-serif'}}
                   value={email}
                   onChange={(e) => setemail(e.target.value)}
+                />
+              </div>
+              <div className="input-box">
+                <ion-icon name="mail-outline"></ion-icon>
+                <input
+                  type="text"
+                  placeholder="Username"
+                  style={{ fontFamily: 'sans-serif'}}
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
                 />
               </div>
               <div className="input-box">

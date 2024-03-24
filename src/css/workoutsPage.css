@@ -1,56 +1,8 @@
-:root{
-    --accent-color: #0255FF;
-}
-body{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-.workouts-page{
+.your-feed-header{
     display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
+    justify-content:space-between;
+    align-items: center;
 }
-.difficulty {
-    position: absolute;
-    top: 60px;
-    left: 30px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-.type {
-    position: absolute;
-    top: 100px;
-    left: 30px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-.numberOfDays {
-    position: absolute;
-    top: 140px;
-    left: 30px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 5px;
-}
-.workouts {
-    margin-left: 180px;
-    background-color: yellow;
-    height: 100vh;
-    width: 90vw;
-    border-color: rgb(201, 201, 201);
-    border-style: solid;
-    border-top: 0;
-    border-bottom: 0;
-    border-width: 1px;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-.workouts::-webkit-scrollbar{
-    display: none;
+.filter-button{
+    padding-right: 10px;
 }

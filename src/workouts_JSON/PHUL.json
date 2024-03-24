@@ -1,0 +1,67 @@
+{
+    "name": "Strength and Hypertrophy Program",
+    "user": "UserID",
+    "workouts": [
+        {
+            "workoutName": "Day 1 (Upper Strength)",
+            "description": "Upper body strength training",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "numberOfDays": "4",
+            "exercises": [
+                { "exerciseName": "Barbell Bench Press", "sets": "3", "reps": "3-5" },
+                { "exerciseName": "Incline Dumbbell Bench Press", "sets": "3", "reps": "6-10" },
+                { "exerciseName": "Bent Over Row", "sets": "3", "reps": "3-5" },
+                { "exerciseName": "Lat Pull Down", "sets": "3", "reps": "6-10" },
+                { "exerciseName": "Overhead Press", "sets": "3", "reps": "5-8" },
+                { "exerciseName": "Barbell Curl", "sets": "3", "reps": "6-10" },
+                { "exerciseName": "Skullcrusher", "sets": "3", "reps": "6-10" }
+            ]
+        },
+        {
+            "workoutName": "Day 2 (Lower Strength)",
+            "description": "Lower body strength training",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "numberOfDays": "4",
+            "exercises": [
+                { "exerciseName": "Squat", "sets": "3-4", "reps": "3-5" },
+                { "exerciseName": "Deadlift", "sets": "3-4", "reps": "3-5" },
+                { "exerciseName": "Leg Press", "sets": "3-5", "reps": "10-15" },
+                { "exerciseName": "Leg Curl", "sets": "3-4", "reps": "6-10" },
+                { "exerciseName": "Calf Exercise", "sets": "4", "reps": "6-10" }
+            ]
+        },
+        {
+            "workoutName": "Day 3 (Upper Hypertrophy)",
+            "description": "Upper body hypertrophy training",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "numberOfDays": "4",
+            "exercises": [
+                { "exerciseName": "Incline Barbell Bench Press", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "Flat Bench Dumbbell Flye", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "Seated Cable Row", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "One Arm Dumbbell Row", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "Dumbbell Lateral Raise", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "Seated Incline Dumbbell Curl", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "Cable Tricep Extension", "sets": "3-4", "reps": "8-12" }
+            ]
+        },
+        {
+            "workoutName": "Day 4 (Lower Hypertrophy)",
+            "description": "Lower body hypertrophy training",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "numberOfDays": "4",
+            "exercises": [
+                { "exerciseName": "Front Squat", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "Barbell Lunge", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "Leg Extension", "sets": "3-4", "reps": "10-15" },
+                { "exerciseName": "Leg Curl", "sets": "3-4", "reps": "10-15" },
+                { "exerciseName": "Seated Calf Raise", "sets": "3-4", "reps": "8-12" },
+                { "exerciseName": "Calf Press", "sets": "3-4", "reps": "8-12" }
+            ]
+        }
+    ]
+}

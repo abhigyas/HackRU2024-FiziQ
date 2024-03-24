@@ -1,0 +1,95 @@
+{
+    "name": "Mike Israetel",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Upper body focus with bench press, standing press, and accessory movements.",
+        "difficulty": "Advanced",
+        "type": "Bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {"exerciseName": "Barbell Bench Press", "sets": "4", "reps": "8"},
+          {"exerciseName": "Barbell Standing Press", "sets": "3", "reps": "8"},
+          {"exerciseName": "Weighted Dips", "sets": "4", "reps": "8"},
+          {"exerciseName": "Cable Flies", "sets": "4", "reps": "12"},
+          {"exerciseName": "Barbell Shrug", "sets": "5", "reps": "10"},
+          {"exerciseName": "Barbell Upright Row", "sets": "3", "reps": "10"},
+          {"exerciseName": "EZ Bar Curls", "sets": "3", "reps": "8"},
+          {"exerciseName": "Machine Crunches", "sets": "3", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Lower body strength day with squats, leg press, calf work, and overhead pressing.",
+        "difficulty": "Advanced",
+        "type": "Bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {"exerciseName": "High Bar Squats", "sets": "4", "reps": "8"},
+          {"exerciseName": "Leg Press", "sets": "6", "reps": "10"},
+          {"exerciseName": "Calves on Leg Press", "sets": "5", "reps": "8"},
+          {"exerciseName": "Seated Dumbbell Overhead Press", "sets": "2", "reps": "10"},
+          {"exerciseName": "Dumbbell Bent Shrug", "sets": "5", "reps": "20"},
+          {"exerciseName": "Barbell Upright Row", "sets": "4", "reps": "15"},
+          {"exerciseName": "EZ Bar Curls", "sets": "4", "reps": "12"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Focus on deadlift variations and back work, with pullups and core strengthening.",
+        "difficulty": "Advanced",
+        "type": "Bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {"exerciseName": "Sumo Deficit Deadlift", "sets": "4", "reps": "8"},
+          {"exerciseName": "SL Deadlift", "sets": "3", "reps": "8"},
+          {"exerciseName": "Barbell Bent Row", "sets": "4", "reps": "8"},
+          {"exerciseName": "Pullups", "sets": "1", "reps": "30"},
+          {"exerciseName": "Machine Crunches", "sets": "4", "reps": "15"}
+        ]
+      },
+      {
+        "workoutName": "Day 4",
+        "description": "Incline and close-grip bench press for chest and triceps, with shoulder and curl work.",
+        "difficulty": "Advanced",
+        "type": "Bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {"exerciseName": "Incline Close Grip Bench", "sets": "4", "reps": "10"},
+          {"exerciseName": "Wide Grip Pushup", "sets": "1", "reps": "50"},
+          {"exerciseName": "Overhead EZ Extension", "sets": "4", "reps": "AMAP"},
+          {"exerciseName": "Incline Close Grip Bench", "sets": "4", "reps": "AMAP"},
+          {"exerciseName": "Dumbbell Side Laterals", "sets": "3", "reps": "10"},
+          {"exerciseName": "Dumbbell Curls", "sets": "3", "reps": "10"}
+        ]
+      },
+      {      "workoutName": "Day 5",
+      "description": "Leg focus with machine-based squats and calves, plus hypertrophy work for shoulders and arms.",
+      "difficulty": "Advanced",
+      "type": "Bodybuilding",
+      "numberOfDays": "6",
+      "exercises": [
+        {"exerciseName": "Smith Machine Feet Forward Squats", "sets": "4", "reps": "12"},
+        {"exerciseName": "Smith Machine Calves", "sets": "7", "reps": "12"},
+        {"exerciseName": "Dumbbell Rear Lateral Raise", "sets": "4", "reps": "AMAP"},
+        {"exerciseName": "Dumbbell Upright Row", "sets": "4", "reps": "AMAP"},
+        {"exerciseName": "Dumbbell Occlusion Curls", "sets": "1", "reps": "50"},
+        {"exerciseName": "Hanging Knee Raises", "sets": "1", "reps": "30"}
+      ]
+    },
+    {
+      "workoutName": "Day 6",
+      "description": "Back and hamstrings focus with weighted pullups, cable rows, leg curls, and glute bridges.",
+      "difficulty": "Advanced",
+      "type": "Bodybuilding",
+      "numberOfDays": "6",
+      "exercises": [
+        {"exerciseName": "Weighted Pullups", "sets": "4", "reps": "10"},
+        {"exerciseName": "Cable Rows", "sets": "3", "reps": "15"},
+        {"exerciseName": "Lying Leg Curls", "sets": "6", "reps": "12"},
+        {"exerciseName": "Glute Bridge", "sets": "3", "reps": "15"}
+      ]
+    }
+  ]
+}

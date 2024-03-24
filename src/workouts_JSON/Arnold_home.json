@@ -1,0 +1,61 @@
+{
+    "name": "Arnold Home",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Full body routine focusing on strength and endurance using bodyweight exercises.",
+        "difficulty": "Beginner",
+        "type": "Bodyweight",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Pushups", "sets": "3", "reps": "35"},
+          {"exerciseName": "Dips Between Chairs", "sets": "3", "reps": "35"},
+          {"exerciseName": "Row Between Chairs", "sets": "3", "reps": "35"},
+          {"exerciseName": "Sit-ups", "sets": "3", "reps": "35"},
+          {"exerciseName": "Bent-leg Raises", "sets": "3", "reps": "35"},
+          {"exerciseName": "Bent-over Twists", "sets": "3", "reps": "35"},
+          {"exerciseName": "Squats (aka Knee Bends)", "sets": "3", "reps": "35"},
+          {"exerciseName": "Calf Raises", "sets": "3", "reps": "35"},
+          {"exerciseName": "Chin-ups", "sets": "3", "reps": "35"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Repetition of Day 1 routine to build consistency and muscular endurance.",
+        "difficulty": "Beginner",
+        "type": "Bodyweight",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Pushups", "sets": "3", "reps": "35"},
+          {"exerciseName": "Dips Between Chairs", "sets": "3", "reps": "35"},
+          {"exerciseName": "Row Between Chairs", "sets": "3", "reps": "35"},
+          {"exerciseName": "Sit-ups", "sets": "3", "reps": "35"},
+          {"exerciseName": "Bent-leg Raises", "sets": "3", "reps": "35"},
+          {"exerciseName": "Bent-over Twists", "sets": "3", "reps": "35"},
+          {"exerciseName": "Squats (aka Knee Bends)", "sets": "3", "reps": "35"},
+          {"exerciseName": "Calf Raises", "sets": "3", "reps": "35"},
+          {"exerciseName": "Chin-ups", "sets": "3", "reps": "35"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Final day of the cycle emphasizing the same comprehensive bodyweight exercises.",
+        "difficulty": "Beginner",
+        "type": "Bodyweight",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Pushups", "sets": "3", "reps": "35"},
+          {"exerciseName": "Dips Between Chairs", "sets": "3", "reps": "35"},
+          {"exerciseName": "Row Between Chairs", "sets": "3", "reps": "35"},
+          {"exerciseName": "Sit-ups", "sets": "3", "reps": "35"},
+          {"exerciseName": "Bent-leg Raises", "sets": "3", "reps": "35"},
+          {"exerciseName": "Bent-over Twists", "sets": "3", "reps": "35"},
+          {"exerciseName": "Squats (aka Knee Bends)", "sets": "3", "reps": "35"},
+          {"exerciseName": "Calf Raises", "sets": "3", "reps": "35"},
+          {"exerciseName": "Chin-ups", "sets": "3", "reps": "35"}
+        ]
+      }
+    ]
+  }
+  

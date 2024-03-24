@@ -1,0 +1,230 @@
+{
+    "name": "Reddit-PPL Weekly Workout Program",
+    "user": "user_id_here",
+    "workouts": [
+      {
+        "workoutName": "Monday - Pull",
+        "description": "This workout focuses on pulling exercises, targeting the back and biceps.",
+        "difficulty": "intermediate",
+        "type": "bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {
+            "exerciseName": "Deadlift",
+            "sets": "1",
+            "reps": "5"
+          },
+          {
+            "exerciseName": "Lat Pulldown",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Cable Row",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Face Pull",
+            "sets": "5",
+            "reps": "15"
+          },
+          {
+            "exerciseName": "Hammer Curl",
+            "sets": "4",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "DB Curl",
+            "sets": "4",
+            "reps": "8"
+          }
+        ]
+      },
+      {
+        "workoutName": "Tuesday - Push",
+        "description": "This workout focuses on pushing exercises, targeting the chest, shoulders, and triceps.",
+        "difficulty": "intermediate",
+        "type": "bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {
+            "exerciseName": "Bench Press",
+            "sets": "5",
+            "reps": "5"
+          },
+          {
+            "exerciseName": "Overhead Press",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Incline DB",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Tricep Pushdown",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Overhead Tricep Ext",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Lateral Raise",
+            "sets": "3",
+            "reps": "15"
+          }
+        ]
+      },
+      {
+        "workoutName": "Wednesday - Legs",
+        "description": "This workout focuses on leg exercises, targeting the quads, hamstrings, and calves.",
+        "difficulty": "intermediate",
+        "type": "bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {
+            "exerciseName": "Squat",
+            "sets": "5",
+            "reps": "5"
+          },
+          {
+            "exerciseName": "Romanian Deadlift",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Leg Press",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Leg curls",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Calf Raise",
+            "sets": "5",
+            "reps": "8"
+          }
+        ]
+      },
+      {
+        "workoutName": "Friday - Pull",
+        "description": "This workout focuses on pulling exercises, targeting the back and biceps.",
+        "difficulty": "intermediate",
+        "type": "bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {
+            "exerciseName": "BB Row",
+            "sets": "5",
+            "reps": "5"
+          },
+          {
+            "exerciseName": "Lat Pulldown",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Cable Row",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Face Pull",
+            "sets": "5",
+            "reps": "15"
+          },
+          {
+            "exerciseName": "Hammer Curl",
+            "sets": "4",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "DB Curl",
+            "sets": "4",
+            "reps": "8"
+          }
+        ]
+      },
+      {
+        "workoutName": "Saturday - Push",
+        "description": "This workout focuses on pushing exercises, targeting the chest, shoulders, and triceps.",
+        "difficulty": "intermediate",
+        "type": "bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {
+            "exerciseName": "Overhead Press",
+            "sets": "5",
+            "reps": "5"
+          },
+          {
+            "exerciseName": "Bench Press",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Incline DB",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Tricep Pushdown",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Overhead Tricep Ext",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Lateral Raise",
+            "sets": "3",
+            "reps": "15"
+          }
+        ]
+      },
+      {
+        "workoutName": "Sunday - Legs",
+        "description": "This workout focuses on leg exercises, targeting the quads, hamstrings, and calves.",
+        "difficulty": "intermediate",
+        "type": "bodybuilding",
+        "numberOfDays": "6",
+        "exercises": [
+          {
+            "exerciseName": "Squat",
+            "sets": "5",
+            "reps": "5"
+          },
+          {
+            "exerciseName": "Romanian Deadlift",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Leg Press",
+            "sets": "3",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Calf Raise",
+            "sets": "5",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Leg curls",
+            "sets": "3",
+            "reps": "8"
+          }
+        ]
+      }
+    ]
+  }

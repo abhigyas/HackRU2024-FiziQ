@@ -1,0 +1,87 @@
+{
+    "name": "Weekly Body Part Split Program",
+    "user": "UserID",
+    "workouts": [
+        {
+            "workoutName": "Monday: Chest, Back, Shoulders",
+            "description": "Chest, back, and shoulder workout",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "numberOfDays": "6",
+            "exercises": [
+                { "exerciseName": "Bench Press to Neck (SS1)", "sets": "3", "reps": "6" },
+                { "exerciseName": "V Bar Dips (SS1)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Chin Ups to Sternum (SS2)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Wide Grip Pulldowns (SS2)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Lateral Raises (SS3)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Dumbbell Swings (SS3)", "sets": "3", "reps": "6" }
+            ]
+        },
+        {
+            "workoutName": "Tuesday: Biceps, Triceps, Forearms",
+            "description": "Biceps, triceps, and forearm workout",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "exercises": [
+                { "exerciseName": "Barbell Drag Curls (SS1)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Seated Dumbbell Curls (SS1)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Tricep Rope Pulls (SS2)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Dumbbell Kickbacks (SS2)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Reverse Wrist Curls (SS3)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Wrist Curls (SS3)", "sets": "3", "reps": "6" }
+            ]
+        },
+        {
+            "workoutName": "Wednesday: Thighs, Calves",
+            "description": "Thigh and calf workout",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "exercises": [
+                { "exerciseName": "Sissy Squats", "sets": "3", "reps": "6" },
+                { "exerciseName": "Hack Squats", "sets": "3", "reps": "6" },
+                { "exerciseName": "Leg Curls", "sets": "3", "reps": "6" },
+                { "exerciseName": "Standing Calf Raises", "sets": "3", "reps": "6" }
+            ]
+        },
+        {
+            "workoutName": "Thursday: Chest, Back, Shoulders",
+            "description": "Repeat of Monday's chest, back, and shoulder workout",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "exercises": [
+                { "exerciseName": "Bench Press to Neck (SS1)", "sets": "3", "reps": "6" },
+                { "exerciseName": "V Bar Dips (SS1)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Chin Ups to Sternum (SS2)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Wide Grip Pulldowns (SS2)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Lateral Raises (SS3)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Dumbbell Swings (SS3)", "sets": "3", "reps": "6" }
+            ]
+        },
+        {
+            "workoutName": "Friday: Biceps, Triceps, Forearms",
+            "description": "Repeat of Tuesday's biceps, triceps, and forearm workout",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "exercises": [
+                { "exerciseName": "Barbell Drag Curls (SS1)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Seated Dumbbell Curls (SS1)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Tricep Rope Pulls (SS2)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Dumbbell Kickbacks (SS2)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Reverse Wrist Curls (SS3)", "sets": "3", "reps": "6" },
+                { "exerciseName": "Wrist Curls (SS3)", "sets": "3", "reps": "6" }
+            ]
+        },
+        {
+            "workoutName": "Saturday: Thighs, Calves",
+            "description": "Repeat of Wednesday's thighs and calves workout",
+            "difficulty": "Intermediate",
+            "type": "Bodybuilding",
+            "exercises": [
+                { "exerciseName": "Sissy Squats", "sets": "3", "reps": "6" },
+                { "exerciseName": "Hack Squats", "sets": "3", "reps": "6" },
+                { "exerciseName": "Leg Curls", "sets": "3", "reps": "6" },
+                { "exerciseName": "Standing Calf Raises", "sets": "3", "reps": "6" }
+            ]
+        }
+    ]
+}

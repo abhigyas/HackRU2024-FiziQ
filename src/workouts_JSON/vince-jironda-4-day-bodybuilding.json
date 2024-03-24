@@ -1,0 +1,74 @@
+{
+    "name": "4-Day Split Program",
+    "user": "UserID",
+    "workouts": [
+        {
+            "workoutName": "Day 1: Chest, Biceps, Forearms",
+            "description": "Chest, biceps, and forearm workout",
+            "difficulty": "Advanced",
+            "type": "Bodybuilding",
+            "numberOfDays": "4",
+            "exercises": [
+                { "exerciseName": "Decline Low Cable Crossover", "sets": "8", "reps": "8" },
+                { "exerciseName": "Bench Press to Neck", "sets": "8", "reps": "8" },
+                { "exerciseName": "Incline Dumbbell Press", "sets": "8", "reps": "8" },
+                { "exerciseName": "Wide Grip V-Bar Dips", "sets": "8", "reps": "8" },
+                { "exerciseName": "Drag Curls", "sets": "8", "reps": "8" },
+                { "exerciseName": "Preacher Curl", "sets": "8", "reps": "8" },
+                { "exerciseName": "Incline Dumbbell Curl", "sets": "8", "reps": "8" },
+                { "exerciseName": "Zottman Curl", "sets": "8", "reps": "8" },
+                { "exerciseName": "Barbell Wrist Curl", "sets": "8", "reps": "8" }
+            ]
+        },
+        {
+            "workoutName": "Day 2: Shoulders, Triceps",
+            "description": "Shoulder and tricep workout",
+            "difficulty": "Advanced",
+            "type": "Bodybuilding",
+            "numberOfDays": "4",
+            "exercises": [
+                { "exerciseName": "Dumbbell Side Lateral Raise (Seated)", "sets": "8", "reps": "8" },
+                { "exerciseName": "Wide Grip Upright Row", "sets": "8", "reps": "8" },
+                { "exerciseName": "Front to Back Barbell Shoulder Press", "sets": "8", "reps": "8" },
+                { "exerciseName": "Dumbbell Bent Over Rear Delt Lateral", "sets": "8", "reps": "8" },
+                { "exerciseName": "Kneeling Rope Extension", "sets": "8", "reps": "8" },
+                { "exerciseName": "Lying Tricep Extension", "sets": "8", "reps": "8" },
+                { "exerciseName": "2 Dumbbell Tricep Kickback", "sets": "8", "reps": "8" }
+            ]
+        },
+        {
+            "workoutName": "Day 3: Back, Abs",
+            "description": "Back and abdominal workout",
+            "difficulty": "Advanced",
+            "type": "Bodybuilding",
+            "numberOfDays": "4",
+            "exercises": [
+                { "exerciseName": "Sternum Chin Up", "sets": "8", "reps": "8" },
+                { "exerciseName": "High Bench Two Dumbbell Rowing", "sets": "8", "reps": "8" },
+                { "exerciseName": "Low Cable Row with 18\" High Pulley", "sets": "8", "reps": "8" },
+                { "exerciseName": "Medium Grip Lat Pulldown to Chest", "sets": "8", "reps": "8" },
+                { "exerciseName": "Double Crunch", "sets": "8", "reps": "8" },
+                { "exerciseName": "Weighted Crunch", "sets": "8", "reps": "8" },
+                { "exerciseName": "Lying Bent Knee Leg Raises", "sets": "8", "reps": "8" }
+            ]
+        },
+        {
+            "workoutName": "Day 4: Quads, Hamstrings",
+            "description": "Quadriceps and hamstring workout",
+            "difficulty": "Advanced",
+            "type": "Bodybuilding",
+            "numberOfDays": "4",
+            "exercises": [
+                { "exerciseName": "Front Squat", "sets": "8", "reps": "8" },
+                { "exerciseName": "Hack Machine Squat", "sets": "8", "reps": "8" },
+                { "exerciseName": "Sissy Squat", "sets": "8", "reps": "8" },
+                { "exerciseName": "Leg Extension", "sets": "8", "reps": "8" },
+                { "exerciseName": "Supine Leg Curl" , "sets": "8", "reps": "8" },
+                { "exerciseName": "Seated Leg Curl Machine" , "sets": "8", "reps": "8" },
+                { "exerciseName": "Standing Calf Raise" , "sets": "8", "reps": "8" },
+                { "exerciseName": "Seated Calf Raise" , "sets": "8", "reps": "8" }
+            ]
+        }
+    ]
+}
+

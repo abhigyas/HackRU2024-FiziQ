@@ -1,0 +1,221 @@
+{
+    "name": "Jeff Seid Bodybuilding Program",
+    "user": "user_id_here",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "This session focuses on upper body strength, specifically targeting the chest and calf muscles with a combination of presses, flyes, dips, and calf raises.",
+        "difficulty": "Beginner",
+        "type": "Bodybuilding",
+        "numberOfDays": "5",
+        "exercises": [
+          {
+            "exerciseName": "Barbell Incline Bench Press",
+            "sets": "4",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Dumbbell Bench Press",
+            "sets": "4",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Incline Dumbbell Flyes",
+            "sets": "4",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Dips - Chest Version",
+            "sets": "3",
+            "reps": "failure"
+          },
+          {
+            "exerciseName": "Cable Flyes",
+            "sets": "3",
+            "reps": "10"
+          },
+          {
+            "exerciseName": "Standing Calf Raises",
+            "sets": "5",
+            "reps": "15"
+          },
+          {
+            "exerciseName": "Seated Calf Raises",
+            "sets": "5",
+            "reps": "20"
+          }
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Day 2 is all about back strength and endurance, with a series of deadlifts, rows, and chin-ups to develop core stability and back muscle.",
+        "difficulty": "Beginner",
+        "type": "Bodybuilding",
+        "numberOfDays": "5",
+        "exercises": [
+          {
+            "exerciseName": "Deadlift",
+            "sets": "4",
+            "reps": "8"
+          },
+          {
+            "exerciseName": "Bent Over Barbell Row",
+            "sets": "4",
+            "reps": "10"
+          },
+          {
+            "exerciseName": "Wide Grip Chin Up",
+            "sets": "4",
+            "reps": "10"
+          },
+          {
+            "exerciseName": "Seated Cable Rows",
+            "sets": "4",
+            "reps": "10"
+          }
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Focusing on the lower body, Day 3 includes a variety of squats and leg presses to build leg strength and muscular endurance.",
+        "difficulty": "Beginner",
+        "type": "Bodybuilding",
+        "numberOfDays": "5",
+        "exercises": [
+          {
+            "exerciseName": "Squat",
+            "sets": "5",
+            "reps": "15"
+          },
+          {
+            "exerciseName": "Front Squat",
+            "sets": "4",
+            "reps": "10"
+          },
+          {
+            "exerciseName": "Leg Press",
+            "sets": "3",
+            "reps": "10"
+          },
+          {
+            "exerciseName": "Quad Extensions",
+            "sets": "4",
+            "reps": "12"
+          },
+          {
+            "exerciseName": "Lying Leg Curls",
+            "sets": "4",
+            "reps": "12"
+          }
+        ]
+      },
+      {
+        "workoutName": "Day 4",
+        "description": "Day 4 targets arm muscles, including biceps and triceps, with curls and extensions for muscle growth and definition.",
+        "difficulty": "Beginner",
+        "type": "Bodybuilding",
+        "numberOfDays": "5",
+        "exercises": [
+          {
+            "exerciseName": "Barbell Curl",
+            "sets": "4",
+            "reps": "10"
+          },
+          {
+            "exerciseName": "Alternating Dumbbell Curl",
+            "sets": "3",
+            "reps": "10"
+          },
+          {
+            "exerciseName": "Preacher Curl",
+            "sets": "3",
+            "reps": "10"
+          },
+          {
+            "exerciseName": "Concentration Curl",
+            "sets": "3",
+            "reps": "15"
+          },
+          {
+            "exerciseName": "Dumbbell One-Arm Triceps Extension",
+            "sets": "3",
+            "reps": "12"
+          },
+          {
+            "exerciseName": "Tricep Rope Extension",
+            "sets": "4"
+        },
+        {
+          "exerciseName": "Tricep Rope Extension",
+          "sets": "4",
+          "reps": "8"
+        },
+        {
+          "exerciseName": "Skull Crushers",
+          "sets": "4",
+          "reps": "10"
+        },
+        {
+          "exerciseName": "Standing Calf Raises",
+          "sets": "5",
+          "reps": "15"
+        },
+        {
+          "exerciseName": "Seated Calf Raises",
+          "sets": "5",
+          "reps": "20"
+        }
+      ]
+    },
+    {
+      "workoutName": "Day 5",
+      "description": "The final day emphasizes shoulder and trap development with presses, raises, and shrugs, aiming for balanced upper body strength.",
+      "difficulty": "Beginner",
+      "type": "Bodybuilding",
+      "numberOfDays": "5",
+      "exercises": [
+        {
+          "exerciseName": "Shoulder Press",
+          "sets": "4",
+          "reps": "10"
+        },
+        {
+          "exerciseName": "Side Lateral Raise",
+          "sets": "4",
+          "reps": "10"
+        },
+        {
+          "exerciseName": "Bent Over Rear Delt Raise",
+          "sets": "3",
+          "reps": "10"
+        },
+        {
+          "exerciseName": "Front Dumbbell Raise",
+          "sets": "3",
+          "reps": "10"
+        },
+        {
+          "exerciseName": "Upright Barbell Row",
+          "sets": "2",
+          "reps": "10"
+        },
+        {
+          "exerciseName": "Rear Delt Pec Deck Flyes",
+          "sets": "4",
+          "reps": "12"
+        },
+        {
+          "exerciseName": "Barbell Shrug",
+          "sets": "4",
+          "reps": "15"
+        },
+        {
+          "exerciseName": "Dumbbell Shrug",
+          "sets": "3",
+          "reps": "10"
+        }
+      ]
+    }
+  ]
+}
+  

@@ -1,0 +1,71 @@
+{
+    "name": "GZCLP 4-day",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Starting the week with a focus on squats and bench, complemented by upper back and arm work.",
+        "difficulty": "Beginner",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "5", "reps": "3"},
+          {"exerciseName": "Bench", "sets": "3", "reps": "10"},
+          {"exerciseName": "Bench", "sets": "4", "reps": "8"},
+          {"exerciseName": "Lat Pulldowns", "sets": "3", "reps": "15"},
+          {"exerciseName": "Lat Pulldowns", "sets": "4", "reps": "12"},
+          {"exerciseName": "Lat Pulldowns", "sets": "3", "reps": "12"},
+          {"exerciseName": "Lat Pulldowns", "sets": "4", "reps": "12"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Focusing on overhead press and deadlifts, building foundational strength and technique.",
+        "difficulty": "Beginner",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "OHP", "sets": "5", "reps": "3"},
+          {"exerciseName": "Deadlift", "sets": "3", "reps": "10"},
+          {"exerciseName": "Deadlift", "sets": "4", "reps": "8"},
+          {"exerciseName": "DB Row", "sets": "3", "reps": "15"},
+          {"exerciseName": "DB Row", "sets": "4", "reps": "12"},
+          {"exerciseName": "DB Row", "sets": "3", "reps": "15"},
+          {"exerciseName": "DB Row", "sets": "4", "reps": "12"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Mid-week session with a repeat of bench and squat for muscle endurance and strength.",
+        "difficulty": "Beginner",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Bench", "sets": "5", "reps": "3"},
+          {"exerciseName": "Squat", "sets": "3", "reps": "10"},
+          {"exerciseName": "Squat", "sets": "4", "reps": "8"},
+          {"exerciseName": "Lat Pulldowns", "sets": "3", "reps": "15"},
+          {"exerciseName": "Lat Pulldowns", "sets": "4", "reps": "12"},
+          {"exerciseName": "Lat Pulldowns", "sets": "3", "reps": "15"},
+          {"exerciseName": "Lat Pulldowns", "sets": "4", "reps": "12"}
+        ]
+      },
+      {
+        "workoutName": "Day 4",
+        "description": "End of the week focusing on deadlifts and overhead press to enhance strength gains.",
+        "difficulty": "Beginner",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Deadlift", "sets": "5", "reps": "3"},
+          {"exerciseName": "OHP", "sets": "3", "reps": "10"},
+          {"exerciseName": "OHP", "sets": "4", "reps": "8"},
+          {"exerciseName": "DB Row", "sets": "3", "reps": "15"},
+          {"exerciseName": "DB Row", "sets": "4", "reps": "12"},
+          {"exerciseName": "DB Row", "sets": "3", "reps": "15"},
+          {"exerciseName": "DB Row", "sets": "4", "reps": "12"}
+        ]
+      }
+    ]
+  }
+  

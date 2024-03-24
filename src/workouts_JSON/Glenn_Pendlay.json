@@ -1,0 +1,45 @@
+{
+    "name": "Glenn Pendlay",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Day 1 focuses on power and precision with Olympic lifts and squats.",
+        "difficulty": "Beginner",
+        "type": "Olympic",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Snatch", "sets": "10", "reps": "1"},
+          {"exerciseName": "Clean Pull + Hang Clean from Knee", "sets": "5", "reps": "3"},
+          {"exerciseName": "Push Press", "sets": "3", "reps": "5"},
+          {"exerciseName": "Back Squat", "sets": "3", "reps": "5"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Day 2 includes a mix of snatch and clean & jerk variations for technical improvement.",
+        "difficulty": "Beginner",
+        "type": "Olympic",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Snatch Pull + Hang Snatch from Knee", "sets": "5", "reps": "3"},
+          {"exerciseName": "Clean & Jerk", "sets": "10", "reps": "1"},
+          {"exerciseName": "Front Squat", "sets": "3", "reps": "3"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Day 3 is designed to enhance lifting strength and technique under fatigue.",
+        "difficulty": "Beginner",
+        "type": "Olympic",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Snatch", "sets": "5", "reps": "2"},
+          {"exerciseName": "Clean Pull + Hang Clean from Hip", "sets": "5", "reps": "2"},
+          {"exerciseName": "Neck Jerk", "sets": "5", "reps": "2"},
+          {"exerciseName": "Back Squat", "sets": "3", "reps": "5"}
+        ]
+      }
+    ]
+  }
+  

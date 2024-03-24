@@ -1,0 +1,85 @@
+{
+    "name": "Candito 6-week",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Combines heavy squats and bench with accessory work for comprehensive strength.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "5",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "4", "reps": "6"},
+          {"exerciseName": "Bench", "sets": "3", "reps": "3"},
+          {"exerciseName": "Close Grip Bench", "sets": "3", "reps": "8"},
+          {"exerciseName": "Deadlift", "sets": "2", "reps": "6"},
+          {"exerciseName": "Hack squats (reverse)", "sets": "3", "reps": "10"},
+          {"exerciseName": "Single leg hamstring curl", "sets": "3", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Focused on upper body strength with bench variations and rowing movements.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "5",
+        "exercises": [
+          {"exerciseName": "Bench", "sets": "3", "reps": "3"},
+          {"exerciseName": "Incline Bench", "sets": "3", "reps": "6"},
+          {"exerciseName": "Barbell Row", "sets": "4", "reps": "8"},
+          {"exerciseName": "OHP", "sets": "4", "reps": "10"},
+          {"exerciseName": "Weighted Pull-up", "sets": "4", "reps": "10"},
+          {"exerciseName": "Incline press machine", "sets": "3", "reps": "20"},
+          {"exerciseName": "Cable tricep extension", "sets": "3", "reps": "20"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Reiterates the bench press focus with additional close grip work and back exercises.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "5",
+        "exercises": [
+          {"exerciseName": "Bench", "sets": "3", "reps": "3"},
+          {"exerciseName": "Close Grip Bench", "sets": "3", "reps": "6"},
+          {"exerciseName": "Barbell Row", "sets": "4", "reps": "8"},
+          {"exerciseName": "OHP", "sets": "4", "reps": "10"},
+          {"exerciseName": "Weighted Pull-up", "sets": "4", "reps": "10"},
+          {"exerciseName": "Machine lat pullover", "sets": "3", "reps": "20"},
+          {"exerciseName": "Preacher curl", "sets": "3", "reps": "20"}
+        ]
+      },
+      {
+        "workoutName": "Day 4",
+        "description": "Lower body day emphasizing squats and deadlifts with additional leg work.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "5",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "4", "reps": "8"},
+          {"exerciseName": "Bench", "sets": "3", "reps": "3"},
+          {"exerciseName": "Incline Bench", "sets": "3", "reps": "3"},
+          {"exerciseName": "Deadlift", "sets": "2", "reps": "8"},
+          {"exerciseName": "Leg extension", "sets": "3", "reps": "10"},
+          {"exerciseName": "RDL", "sets": "3", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 5",
+        "description": "End of the week session focusing on bench press, rows, overhead press, and pull-ups.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "5",
+        "exercises": [
+        {"exerciseName": "Bench", "sets": "3", "reps": "3"},
+        {"exerciseName": "Close Grip Bench", "sets": "3"},
+        {"exerciseName": "Close Grip Bench", "sets": "3", "reps": "3"},
+        {"exerciseName": "Barbell Row", "sets": "4", "reps": "8"},
+        {"exerciseName": "OHP", "sets": "4", "reps": "10"},
+        {"exerciseName": "Weighted Pull-up", "sets": "4", "reps": "10"},
+        {"exerciseName": "Rear delt flys", "sets": "3", "reps": "20"},
+        {"exerciseName": "Skull crushers", "sets": "3", "reps": "20"}
+      ]
+    }
+  ]
+}

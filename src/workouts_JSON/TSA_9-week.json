@@ -1,0 +1,65 @@
+{
+    "name": "TSA 9-week",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Starting the week focusing on foundational strength development in squats and bench press.",
+        "difficulty": "Beginner",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "2", "reps": "1"},
+          {"exerciseName": "Squat", "sets": "3", "reps": "7"},
+          {"exerciseName": "Bench Press", "sets": "2", "reps": "1"},
+          {"exerciseName": "Bench Press", "sets": "3", "reps": "7"},
+          {"exerciseName": "DB Bench Press", "sets": "3", "reps": "12"},
+          {"exerciseName": "DB Row", "sets": "3", "reps": "12"},
+          {"exerciseName": "Decline Weighted Situp", "sets": "3", "reps": "15"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Emphasizes deadlift and bench press variations with accessory exercises for balanced strength.",
+        "difficulty": "Beginner",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Paused Deadlift", "sets": "3", "reps": "4"},
+          {"exerciseName": "Bench Press", "sets": "1", "reps": "4"},
+          {"exerciseName": "Bench Press", "sets": "2", "reps": "8"},
+          {"exerciseName": "Barbell Hip Thrust", "sets": "3", "reps": "10"},
+          {"exerciseName": "Tricep Pushdown", "sets": "3", "reps": "12"},
+          {"exerciseName": "DB Curl", "sets": "3", "reps": "12"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Squat-focused session with additional upper body work to enhance overall muscular development.",
+        "difficulty": "Beginner",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Competition Squat", "sets": "3", "reps": "5"},
+          {"exerciseName": "Lat Pulldown", "sets": "3", "reps": "15"},
+          {"exerciseName": "One Arm DB Shoulder Press", "sets": "3", "reps": "12"},
+          {"exerciseName": "Single Arm Overhead Tricep Extension (DB)", "sets": "3", "reps": "15"},
+          {"exerciseName": "EZ Bar Curl", "sets": "3", "reps": "15"}
+        ]
+      },
+      {
+        "workoutName": "Day 4",
+        "description": "End of the week deadlift session, paired with bench press and leg accessory work for full-body strength.",
+        "difficulty": "Beginner",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Deadlift", "sets": "3", "reps": "4"},
+          {"exerciseName": "3 ct. Paused Bench Press", "sets": "3", "reps": "4"},
+          {"exerciseName": "Leg Press", "sets": "3", "reps": "10"},
+          {"exerciseName": "Leg Extension", "sets": "3", "reps": "15"}
+        ]
+      }
+    ]
+  }
+  

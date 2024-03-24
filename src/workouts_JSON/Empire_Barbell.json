@@ -1,0 +1,62 @@
+{
+    "name": "Empire Barbell",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Focus on lower body strength with squats and deadlifts, complemented by upper back and arm work.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "4", "reps": "4"},
+          {"exerciseName": "Deadlift", "sets": "3", "reps": "4"},
+          {"exerciseName": "Weighted Back Extensions", "sets": "4", "reps": "10"},
+          {"exerciseName": "Fat Gripz Kroc Row", "sets": "4", "reps": "10"},
+          {"exerciseName": "Reverse Curl", "sets": "4", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Upper body workout with a focus on pressing movements and triceps strength.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Bench Press", "sets": "4", "reps": "4"},
+          {"exerciseName": "Close Grip Bench Press w Chains", "sets": "3", "reps": "4"},
+          {"exerciseName": "Behind the Neck Press", "sets": "5", "reps": "12"},
+          {"exerciseName": "Band Pressdown", "sets": "3", "reps": "50"},
+          {"exerciseName": "Dumbbell Skullcrusher", "sets": "3", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Squat variations and lunges for leg strength, with additional rowing for back.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "1", "reps": "Failure"},
+          {"exerciseName": "SSB Pause Squat", "sets": "3", "reps": "4"},
+          {"exerciseName": "Lunges w/ Dumbbells", "sets": "5", "reps": "10/10"},
+          {"exerciseName": "Fat Gripz T-Bar Row", "sets": "5", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 4",
+        "description": "Bench press focus with variations for chest and triceps, including accessory lifts for shoulders.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Bench Press", "sets": "1", "reps": "Failure"},
+          {"exerciseName": "Spoto Bench Press", "sets": "3", "reps": "4"},
+          {"exerciseName": "Dips", "sets": "5", "reps": "10"},
+          {"exerciseName": "Front Raise", "sets": "5", "reps": "10"},
+          {"exerciseName": "French Press", "sets": "5", "reps": "10"}
+        ]
+      }
+    ]
+  }
+  

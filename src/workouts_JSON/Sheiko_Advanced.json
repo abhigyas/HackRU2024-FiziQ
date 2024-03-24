@@ -1,0 +1,45 @@
+{
+    "name": "Sheiko Advanced",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "High-intensity squat and bench press sessions with accessory work for balanced development.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "8", "reps": "3"},
+          {"exerciseName": "Bench press", "sets": "7", "reps": "3"},
+          {"exerciseName": "Dumbbell fly", "sets": "4", "reps": "8"},
+          {"exerciseName": "Abs", "sets": "3", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "A demanding session combining heavy squats, bench press, and deadlifts to enhance powerlifting skills.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "7", "reps": "3"},
+          {"exerciseName": "Bench press", "sets": "7", "reps": "3"},
+          {"exerciseName": "Deadlift", "sets": "6", "reps": "3"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Focus on technical improvements in squat and bench press, complemented by accessory exercises.",
+        "difficulty": "Advanced",
+        "type": "Powerlifting",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "12", "reps": "3"},
+          {"exerciseName": "Bench press", "sets": "10", "reps": "3"},
+          {"exerciseName": "Dumbbell fly", "sets": "5", "reps": "10"},
+          {"exerciseName": "Good morning (sitting)", "sets": "5", "reps": "5"}
+        ]
+      }
+    ]
+  }
+  

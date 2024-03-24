@@ -1,0 +1,65 @@
+{
+    "name": "SuperTotal",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "A balanced strength routine focusing on fundamental lifts and core stability.",
+        "difficulty": "Intermediate",
+        "type": "Olympic",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "4", "reps": "10"},
+          {"exerciseName": "Bench", "sets": "4", "reps": "10"},
+          {"exerciseName": "Inverted Row", "sets": "5", "reps": "10"},
+          {"exerciseName": "Ab Roller", "sets": "5", "reps": "8"},
+          {"exerciseName": "Back Extensions", "sets": "5", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Highly technical Olympic weightlifting movements with a focus on the snatch.",
+        "difficulty": "Intermediate",
+        "type": "Olympic",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Tall Snatch", "sets": "3", "reps": "3"},
+          {"exerciseName": "Snatch Pull + 2 Hang Power Sn", "sets": "3", "reps": "1"},
+          {"exerciseName": "Power Sn + Snatch", "sets": "5", "reps": "1"},
+          {"exerciseName": "Snatch Pull + Snatch", "sets": "5", "reps": "1"},
+          {"exerciseName": "Snatch", "sets": "5", "reps": "1"},
+          {"exerciseName": "Deadlift", "sets": "4", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Combines strength work with upper body pull and core exercises.",
+        "difficulty": "Intermediate",
+        "type": "Olympic",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Squat", "sets": "4", "reps": "5"},
+          {"exerciseName": "Bench", "sets": "4", "reps": "5"},
+          {"exerciseName": "Pullups", "sets": "5", "reps": "6"},
+          {"exerciseName": "Leg Raises", "sets": "5", "reps": "10"},
+          {"exerciseName": "Reverse Hyper", "sets": "5", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 4",
+        "description": "Focus on clean and jerk variations, incorporating full-body strength work.",
+        "difficulty": "Intermediate",
+        "type": "Olympic",
+        "numberOfDays": "4",
+        "exercises": [
+          {"exerciseName": "Muscle Clean and Press", "sets": "3", "reps": "3"},
+          {"exerciseName": "Hang Clean + Push Press", "sets": "3", "reps": "2"},
+          {"exerciseName": "Power Clean + Front Squat + 2 Jerks", "sets": "5", "reps": "1"},
+          {"exerciseName": "Clean Pull + Clean & Jerk", "sets": "5", "reps": "1"},
+          {"exerciseName": "Clean and Jerk", "sets": "5", "reps": "1"},
+          {"exerciseName": "Deadlift", "sets": "4", "reps": "5"}
+        ]
+      }
+    ]
+  }
+  

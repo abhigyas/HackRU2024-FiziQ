@@ -1,0 +1,49 @@
+{
+    "name": "Chinese Weightlifting",
+    "user": "ObjectId('user-id-here')",
+    "workouts": [
+      {
+        "workoutName": "Day 1",
+        "description": "Intense session focused on improving snatch and clean & jerk technique with volume work.",
+        "difficulty": "Intermediate",
+        "type": "Olympic",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Snatch (3x1; 3x2)", "sets": "6", "reps": "2"},
+          {"exerciseName": "Power Clean & Jerk (3x1; 3x2)", "sets": "6", "reps": "2"},
+          {"exerciseName": "Snatch Pull (5x3)", "sets": "5", "reps": "3"},
+          {"exerciseName": "Front Squat (3x1)", "sets": "3", "reps": "1"},
+          {"exerciseName": "Triceps 5x10/Rows 6x5", "sets": "6", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 2",
+        "description": "Day 2 emphasizes lower body strength with squats, cleans, and deadlifts, alongside core stability work.",
+        "difficulty": "Intermediate",
+        "type": "Olympic",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Back Squat (3x1; 3x3)", "sets": "6", "reps": "2"},
+          {"exerciseName": "Clean (5x2-3)", "sets": "6", "reps": "2"},
+          {"exerciseName": "Hang Snatch w/ Straps (5x2-3)", "sets": "5", "reps": "3"},
+          {"exerciseName": "Deadlift (5x3)", "sets": "3", "reps": "1"},
+          {"exerciseName": "Situps 5x15-20 OR Dips 5x10", "sets": "6", "reps": "10"}
+        ]
+      },
+      {
+        "workoutName": "Day 3",
+        "description": "Day 3 combines technical lifts with strength work, focusing on clean pulls and front squats.",
+        "difficulty": "Intermediate",
+        "type": "Olympic",
+        "numberOfDays": "3",
+        "exercises": [
+          {"exerciseName": "Snatch (3x1, 3x1-2)", "sets": "6", "reps": "2"},
+          {"exerciseName": "C&J (3x1, 3x2)", "sets": "6", "reps": "2"},
+          {"exerciseName": "Clean Pull (5x3)", "sets": "5", "reps": "3"},
+          {"exerciseName": "Front Squat (3x1 90%+, 3x3)", "sets": "3", "reps": "1"},
+          {"exerciseName": "Jerk Dip (3x3)", "sets": "5", "reps": "3"}
+        ]
+      }
+    ]
+  }
+  

@@ -89,7 +89,12 @@ function Home() {
           </div>
         </div>
         <div className="workouts-preview">
-
+            <div className="beginner-workouts-header">
+                <h1>Beginner Workouts</h1>
+            </div>
+            <a  className="view-all-workouts">
+                <button className="view-all-workouts-button">View all workouts</button>
+            </a>
         </div>
       </div>
     </>

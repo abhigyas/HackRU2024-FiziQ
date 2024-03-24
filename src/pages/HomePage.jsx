@@ -58,7 +58,7 @@ function Home() {
                     <li className="logo-holder">
                         <a className="nav-link">
                             <img  className='homepage-logo' src={logo} draggable="false" />
-                            <span className="linktext">Fizi<a className='blue-text'>Q</a> | Fit For All</span>
+                            <span className="linktext">Fizi<a className='blue-text'>Q</a> Fit For All</span>
                         </a>
                     </li>
 
@@ -113,7 +113,7 @@ function Home() {
           </div>
         </div>
         <div className="feed-container">
-          <div className="your-feed-header">
+          <div className="your-feed-header-home">
             <h1>Feed</h1>
           </div>
           <div className="feed-posts">

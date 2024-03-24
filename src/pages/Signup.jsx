@@ -5,6 +5,7 @@ import Alert from '@mui/material/Alert';
 import AlertTitle from '@mui/material/AlertTitle';
 import Stack from '@mui/material/Stack';
 import axios from 'axios';
+import logo from '../icons/logo.png';
 
     
 
@@ -44,6 +45,7 @@ function Signup() {
         <>
           <div className='form-box-holder'>
             <div className="form-box">
+              <img className='logo' src={logo} alt="" />
               <h1 className='header-text'>Create Account</h1>
               <div className="input-box">
                 <ion-icon name="mail-outline"></ion-icon>

@@ -11,7 +11,7 @@ function Home() {
           <ul className="navbar-nav">
                     <li className="logo">
                         <a className="nav-link">
-                            <img id="mainicon" src="../src/icons/Airpfp.png" draggable="false" />
+                            <img id="mainicon" src="" draggable="false" />
                             <span className="linktext">Air Music</span>
                         </a>
                     </li>

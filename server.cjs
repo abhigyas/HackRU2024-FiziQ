@@ -250,12 +250,6 @@ app.delete("/api/delete-workout/:id", async(req, res)=>{
 });
 
 
-
-
-
-
-
-
 app.get('/api/get-post', (req, res) => {
     imageSchema.find({})
     .then((data, err)=>{

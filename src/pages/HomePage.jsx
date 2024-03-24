@@ -5,12 +5,29 @@ import dumbbell from '../icons/dumbbell.png';
 import profile from '../icons/profile.png';
 import Post from '../components/createPost.jsx';
 import CreatePost from '../components/createPost.jsx';
+import FeedElement from '../components/feedElement.jsx';
 
 
 
 function Home() {
+    
     const [toggle, setToggle] = useState(false);
     const modalRef = useRef(null);
+    const [posts, setPosts] = useState([]);
+    
+
+    useEffect(() => {
+        fetch('http://localhost:443/api/get-post')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            console.log(response);
+            return response.json();
+          })
+          .then(data => setPosts(data))
+          .catch(error => console.error('Error:', error));
+      }, []);
 
     const togglePost = (e) => {
         e.preventDefault()
@@ -100,17 +117,9 @@ function Home() {
             <h1>Feed</h1>
           </div>
           <div className="feed-posts">
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
+          {posts.map((post, index) => (
+            <FeedElement key={index} {...post} />
+            ))}
           </div>
         </div>
         <div className="workouts-preview">

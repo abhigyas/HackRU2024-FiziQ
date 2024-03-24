@@ -18,13 +18,14 @@ mongoose.connect("mongodb+srv://kashyaptbusiness:fTzsf8LFjh30g35e@fiziq.mkrrmei.
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
 
 var imageSchema = new mongoose.Schema({
+    username: String,
     description: String,
     img:{
         data: Buffer,
         contentType: String
     }
 });
-
+const Image = mongoose.model('Image', imageSchema);
 const Post = mongoose.model("Post", imageSchema);
 
 var bodyParser = require('body-parser');
@@ -250,14 +251,27 @@ app.delete("/api/delete-workout/:id", async(req, res)=>{
 });
 
 
-app.get('/api/get-post', (req, res) => {
-    imageSchema.find({})
-    .then((data, err)=>{
-        if(err){
-            console.log(err);
-        }
-        res.render('imagepage',{items: data})
+
+app.get('/api/get-username', async (req, res) => {
+    const email = req.query.email;
+    const user = await User.findOne({ email: email });
+    if (user) {
+      res.json({ username: user });
+    } else {
+      res.status(404).json({ error: 'User not found' });
+    }
+  });
+
+
+  app.get('/api/get-post', (req, res) => {
+    Image.find({})
+    .then((data) => {
+        res.json(data);
     })
+    .catch((err) => {
+        console.log(err);
+        res.status(500).send();
+    });
 });
 // app.post('/api/create-post', upload.single('image'), (req, res, next) => {
  
@@ -280,6 +294,7 @@ app.get('/api/get-post', (req, res) => {
 // });
 app.post('/api/create-post', upload.single('image'), (req, res, next) => {
     var obj = {
+        username: req.body.username,
         description: req.body.desc,
         img: {
             data: new Binary(fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename))),

@@ -1,8 +1,9 @@
-import React, { forwardRef } from "react";
+import React, { useEffect, forwardRef } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import "../css/createPost.css";
 import axios from "axios";
+import { set } from "mongoose";
 
 const CreatePost = forwardRef((props, ref) => {
   const [username, setUsername] = useState("");
@@ -15,6 +16,9 @@ const CreatePost = forwardRef((props, ref) => {
     const file = e.target.files[0];
     setImage(file);
   };
+  useEffect(() => {
+    setUsername(localStorage.getItem('username'));
+  }, []);
   
   const handleCreatePost = async (e) => {
     e.preventDefault(); 
@@ -22,6 +26,7 @@ const CreatePost = forwardRef((props, ref) => {
     const formData = new FormData();
     formData.append('image', image); 
     formData.append('desc', description); 
+    formData.append('username', username);
   
     try {
       const response = await axios.post('http://localhost:443/api/create-post', formData, {

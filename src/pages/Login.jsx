@@ -12,30 +12,38 @@ import logo from '../icons/logo.png';
 function Login() {
     const navigate = useNavigate();
     const [email, setemail] = useState("");
+    const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
     const [error, setError] = useState('');
     const [showAlert, setShowAlert] = useState(false); 
 
     const handleLogin = async () => {
-        setError('');
+      setError('');
     
-        try {
-          const response = await axios.post('http://localhost:443/api/login', { email, password });
-          console.log("Response: ", response.data);
+      try {
+        const response = await axios.post('http://localhost:443/api/login', { email, password });
+        console.log("Response: ", response.data);
     
-          const userData = {
-            email: response.data.email,
-          };
-          localStorage.setItem('userData', JSON.stringify(userData));
-          console.log(JSON.stringify(userData));
-          console.log(response);
-          const accessToken = response.data.jwtToken;
-          navigate('/home')
-        } catch (err) {
-          setError(err.response?.data.message);
-          console.log('Error: ', err);
-        }
-      };
+        const userData = {
+          email: response.data.email,
+        };
+        localStorage.setItem('userData', JSON.stringify(userData));
+        console.log(JSON.stringify(userData));
+        console.log(response);
+        const accessToken = response.data.jwtToken;
+    
+
+
+const usernameResponse = await axios.get(`http://localhost:443/api/get-username?email=${email}`);
+const username = usernameResponse.data.username.username;
+localStorage.setItem('username', username);
+    
+        navigate('/home')
+      } catch (err) {
+        setError(err.response?.data.message);
+        console.log('Error: ', err);
+      }
+    };
     return (
         <>
           <div className='form-box-holder'>

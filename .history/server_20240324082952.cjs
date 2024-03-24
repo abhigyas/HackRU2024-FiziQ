@@ -5,48 +5,45 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const secret = process.env.JWT_SECRET;
-const bodyParser = require('body-parser');
-
 
 const cors = require("cors");
 const app = express();
-app.use(bodyParser.json());
-
 mongoose.connect("mongodb+srv://kashyaptbusiness:fTzsf8LFjh30g35e@fiziq.mkrrmei.mongodb.net/?retryWrites=true&w=majority&appName=FiziQ", { useNewUrlParser: true, useUnifiedTopology: true })
 .then(()=>app.listen(port, ()=>console.log(`Server running on port ${port}`)))
 .catch((error)=>console.log(error.message));
 
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
-const exerciseSchema = new mongoose.Schema({
-    exerciseName: String,
-    sets: String,
-    reps: String
-   });
-   
-   const workoutSchema = new mongoose.Schema({
-    workoutName: String,
-    description: String,
-    difficulty: String,
-    type: String,
-    numberOfDays: String,
-    exercises: [exerciseSchema]
-   });
-   
-   const workoutPlanSchema = new mongoose.Schema({
+const workoutSchema = new mongoose.Schema({
+    
     name: String,
     user: String,
-    workouts: [workoutSchema]
-   });
-   
-   const Workout = mongoose.model("Workout", workoutPlanSchema);
+    workouts: [
+        {
+            workoutName: String,
+            description: String,
+            difficulty: String,
+            type: String,
+            numberOfDays: String,
+            exercises: [
+                {
+                    exerciseName: String,
+                    sets: String,
+                    reps: String,
+                }
+            ]
+        }
+    ]
+});
+
 const userSchema = new mongoose.Schema({
     email: String,
     password: String,
-    workoutPlan: { type: mongoose.Schema.Types.ObjectId, ref: 'WorkoutPlan' }
+    workouts: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Workout' }]
 });
 
 const User = mongoose.model("User", userSchema);
+const Workout = mongoose.model("Workout", workoutSchema);
 
 app.use(express.json());
 

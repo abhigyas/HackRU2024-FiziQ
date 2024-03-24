@@ -1,0 +1,54 @@
+{"day": [
+    
+]}
+{
+  "name": "Arnold 3-day",
+  "user": "ObjectId('user-id-here')",
+  "workouts": [
+      {
+          "workoutName": "Day 1",
+          "description": "This session emphasizes compound movements to build overall strength and mass, starting with squats for leg development, bench presses for chest, and chin-ups for back and biceps.",
+          "difficulty": "Beginner",
+          "type": "Bodybuilding",
+          "numberOfDays": "3",
+          "exercises": [
+              {"exerciseName": "Squat", "sets": "4", "reps": "10"},
+              {"exerciseName": "Wide Grip Bench Press", "sets": "3", "reps": "10"},
+              {"exerciseName": "Chin Ups", "sets": "3", "reps": "failure"},
+              {"exerciseName": "Behind the Neck Overhead Press", "sets": "4", "reps": "10"},
+              {"exerciseName": "Barbell Curl", "sets": "3", "reps": "10"},
+              {"exerciseName": "Bent Knee Sit Up", "sets": "3-4", "reps": "failure"}
+          ]
+      },
+      {
+          "workoutName": "Day 2",
+          "description": "The second day continues with a focus on foundational lifts, enhancing muscle endurance and promoting hypertrophy with repeated sets of squats, bench presses, and supporting upper body exercises.",
+          "difficulty": "Beginner",
+          "type": "Bodybuilding",
+          "numberOfDays": "3",
+          "exercises": [
+              {"exerciseName": "Squat", "sets": "4", "reps": "10"},
+              {"exerciseName": "Wide Grip Bench Press", "sets": "3", "reps": "10"},
+              {"exerciseName": "Chin Ups", "sets": "3", "reps": "failure"},
+              {"exerciseName": "Behind the Neck Overhead Press", "sets": "4", "reps": "10"},
+              {"exerciseName": "Barbell Curl", "sets": "3", "reps": "10"},
+              {"exerciseName": "Bent Knee Sit Up", "sets": "3-4", "reps": "failure"}
+          ]
+      },
+      {
+          "workoutName": "Day 3",
+          "description": "The final day of the Arnold 3-day program consolidates the gains from the previous sessions, targeting the same major muscle groups to maximize strength and muscle growth, completing the full-body training cycle.",
+          "difficulty": "Beginner",
+          "type": "Bodybuilding",
+          "numberOfDays": "3",
+          "exercises": [
+              {"exerciseName": "Squat", "sets": "4", "reps": "10"},
+              {"exerciseName": "Wide Grip Bench Press", "sets": "3", "reps": "10"},
+              {"exerciseName": "Chin Ups", "sets": "3", "reps": "failure"},
+              {"exerciseName": "Behind the Neck Overhead Press", "sets": "4", "reps": "10"},
+              {"exerciseName": "Barbell Curl", "sets": "3", "reps": "10"},
+              {"exerciseName": "Bent Knee Sit Up", "sets": "3-4", "reps": "failure"}
+          ]
+      }
+  ]
+}

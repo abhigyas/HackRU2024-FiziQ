@@ -1,4 +1,4 @@
-
+{"day": [
     {
         "name": "Arnold 3-day",
         "user": "ObjectId('user-id-here')",
@@ -50,3 +50,5 @@
             }
         ]
       }      
+
+]}

@@ -18,13 +18,13 @@ mongoose.connect("mongodb+srv://kashyaptbusiness:fTzsf8LFjh30g35e@fiziq.mkrrmei.
 
 
 app.use(cors({ origin: "http://localhost:5173", credentials: true }));
-const exerciseSchema = new mongoose.Schema({
+const exerciseSchema = new Schema({
     exerciseName: String,
     sets: String,
     reps: String
    });
    
-   const workoutSchema = new mongoose.Schema({
+   const workoutSchema = new Schema({
     workoutName: String,
     description: String,
     difficulty: String,
@@ -33,20 +33,22 @@ const exerciseSchema = new mongoose.Schema({
     exercises: [exerciseSchema]
    });
    
-   const workoutPlanSchema = new mongoose.Schema({
+   const workoutPlanSchema = new Schema({
     name: String,
-    user: String,
+    user: { type: Schema.Types.ObjectId, ref: 'User' },
     workouts: [workoutSchema]
    });
    
-   const Workout = mongoose.model("Workout", workoutPlanSchema);
+   const WorkoutPlan = mongoose.model('WorkoutPlan', workoutPlanSchema);
+
 const userSchema = new mongoose.Schema({
     email: String,
     password: String,
-    workoutPlan: { type: mongoose.Schema.Types.ObjectId, ref: 'WorkoutPlan' }
+    workoutPlan: { type: Schema.Types.ObjectId, ref: 'WorkoutPlan' }
 });
 
 const User = mongoose.model("User", userSchema);
+const Workout = mongoose.model("Workout", workoutSchema);
 
 app.use(express.json());
 

@@ -35,7 +35,7 @@ const exerciseSchema = new mongoose.Schema({
    
    const workoutPlanSchema = new mongoose.Schema({
     name: String,
-    user: String,
+    user: { type: mongoose.Sc.Types.ObjectId, ref: 'User' },
     workouts: [workoutSchema]
    });
    

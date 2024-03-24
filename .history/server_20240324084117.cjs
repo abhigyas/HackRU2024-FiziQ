@@ -35,18 +35,19 @@ const exerciseSchema = new mongoose.Schema({
    
    const workoutPlanSchema = new mongoose.Schema({
     name: String,
-    user: String,
+    user: { type: Schema.Types.ObjectId, ref: 'User' },
     workouts: [workoutSchema]
    });
    
-   const Workout = mongoose.model("Workout", workoutPlanSchema);
+\
 const userSchema = new mongoose.Schema({
     email: String,
     password: String,
-    workoutPlan: { type: mongoose.Schema.Types.ObjectId, ref: 'WorkoutPlan' }
+    workoutPlan: { type: Schema.Types.ObjectId, ref: 'WorkoutPlan' }
 });
 
 const User = mongoose.model("User", userSchema);
+const Workout = mongoose.model("Workout", workoutSchema);
 
 app.use(express.json());
 

@@ -5,6 +5,7 @@ import React from 'react'
 import Signup from "./pages/Signup.jsx";
 import Home from "./pages/HomePage.jsx";
 import Login from "./pages/Login.jsx";
+import WorkoutsPage from "./pages/WorkoutsPage.jsx";
 
 
 const router = createBrowserRouter(
@@ -17,6 +18,7 @@ const router = createBrowserRouter(
       <Route path="/home" element={<Home/>}/>
       <Route path="/signup" element={<Signup/>}/>
       <Route path="/login" element={<Login/>}/>
+      <Route path="/workouts" element={<WorkoutsPage/>}/>
     </Route>
   )
 );

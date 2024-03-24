@@ -5,8 +5,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const secret = process.env.JWT_SECRET;
-const { Binary } = require('mongodb');
-
 
 const cors = require("cors");
 const app = express();
@@ -36,15 +34,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json())
  
 var multer = require('multer');
-var fs = require('fs');
 
 var storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        var dir = './uploads';
-        if (!fs.existsSync(dir)){
-            fs.mkdirSync(dir);
-        }
-        cb(null, dir);
+        cb(null, 'uploads')
     },
     filename: (req, file, cb) => {
         cb(null, file.fieldname + '-' + Date.now())
@@ -285,17 +278,18 @@ app.get('/api/get-post', (req, res) => {
 //     });
 // });
 app.post('/api/create-post', upload.single('image'), (req, res, next) => {
+ 
     var obj = {
-        description: req.body.desc,
+        desc: req.body.desc,
         img: {
-            data: new Binary(fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename))),
+            data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
             contentType: 'image/png'
         }
     }
     Post.create(obj)
     .then ((err, item) => {
         if (err) {
-            console.log("Reached Here");
+            console.log("Reached Here")
             console.log(err);
         }
         else {

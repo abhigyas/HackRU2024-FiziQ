@@ -286,11 +286,11 @@ app.get('/api/get-post', (req, res) => {
 // });
 app.post('/api/create-post', upload.single('image'), (req, res, next) => {
     var obj = {
-        description: req.body.desc,
+        desc: req.body.desc,
         img: {
-            data: new Binary(fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename))),
-            contentType: 'image/png'
-        }
+    data: new Binary(Buffer.from('iVBORw0KGgoAAAANSUhEUgAAAp0AAAGxCAYAAAAgUw3uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8Y', 'base64')),
+    contentType: 'image/png'
+}
     }
     Post.create(obj)
     .then ((err, item) => {

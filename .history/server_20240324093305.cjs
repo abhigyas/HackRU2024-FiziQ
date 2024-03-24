@@ -5,8 +5,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const secret = process.env.JWT_SECRET;
-const { Binary } = require('mongodb');
-
 
 const cors = require("cors");
 const app = express();
@@ -265,6 +263,25 @@ app.get('/api/get-post', (req, res) => {
         res.render('imagepage',{items: data})
     })
 });
+app.post('/api/create-post', upload.single('image'), (req, res, next) => {
+ 
+    var obj = {
+        desc: req.body.desc,
+        img: {
+            data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
+            contentType: 'image/png'
+        }
+    }
+    imageSchema.create(obj)
+    .then ((err, item) => {
+        if (err) {
+            console.log(err);
+        }
+        else {
+            res.redirect('/');
+        }
+    });
+});
 // app.post('/api/create-post', upload.single('image'), (req, res, next) => {
  
 //     var obj = {
@@ -274,9 +291,10 @@ app.get('/api/get-post', (req, res) => {
 //             contentType: 'image/png'
 //         }
 //     }
-//     imageSchema.create(obj)
+//     Post.create(obj)
 //     .then ((err, item) => {
 //         if (err) {
+//             console.log("Reached Here");
 //             console.log(err);
 //         }
 //         else {
@@ -284,25 +302,6 @@ app.get('/api/get-post', (req, res) => {
 //         }
 //     });
 // });
-app.post('/api/create-post', upload.single('image'), (req, res, next) => {
-    var obj = {
-        description: req.body.desc,
-        img: {
-            data: new Binary(fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename))),
-            contentType: 'image/png'
-        }
-    }
-    Post.create(obj)
-    .then ((err, item) => {
-        if (err) {
-            console.log("Reached Here");
-            console.log(err);
-        }
-        else {
-            res.redirect('/');
-        }
-    });
-});
 
 
 

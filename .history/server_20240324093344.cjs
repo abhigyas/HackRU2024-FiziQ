@@ -5,8 +5,6 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 require("dotenv").config();
 const secret = process.env.JWT_SECRET;
-const { Binary } = require('mongodb');
-
 
 const cors = require("cors");
 const app = express();
@@ -285,10 +283,11 @@ app.get('/api/get-post', (req, res) => {
 //     });
 // });
 app.post('/api/create-post', upload.single('image'), (req, res, next) => {
+ 
     var obj = {
-        description: req.body.desc,
+        desc: req.body.desc,
         img: {
-            data: new Binary(fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename))),
+            data: fs.readFileSync(path.join(__dirname + '/uploads/' + req.file.filename)),
             contentType: 'image/png'
         }
     }

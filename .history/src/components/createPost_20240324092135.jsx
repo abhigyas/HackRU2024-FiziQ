@@ -24,7 +24,7 @@ const CreatePost = forwardRef((props, ref) => {
     formData.append('desc', description); 
   
     try {
-      const response = await axios.post('http://localhost:443/api/create-post', formData, {
+      const response = await axios.post('/api/create-post', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },

@@ -264,7 +264,7 @@ app.get('/api/get-username', async (req, res) => {
 
 
   app.get('/api/get-post', (req, res) => {
-    Post.find({})
+    Posts.find({})
     .then((data) => {
         res.json(data);
     })

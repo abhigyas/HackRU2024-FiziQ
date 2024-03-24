@@ -71,7 +71,22 @@ function Home() {
           </div>
         </div>
         <div className="feed-container">
-          
+          <div className="your-feed-header">
+            <h1>Feed</h1>
+          </div>
+          <div className="feed-posts">
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+            <div className="test"></div>
+          </div>
         </div>
         <div className="workouts-preview">
 

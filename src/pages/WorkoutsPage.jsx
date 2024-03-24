@@ -114,7 +114,6 @@ function WorkoutsPage() {
         <div className="feed-container">
           <div className="your-feed-header">
             <h1 className="all-workouts-header">All Workouts</h1>
-            <button className="filter-button">filter</button>
           </div>
           <div className="feed-posts">
             {Object.values(workouts).map((workout, index) => (

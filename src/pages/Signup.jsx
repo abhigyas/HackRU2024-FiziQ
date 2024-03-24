@@ -52,7 +52,7 @@ function Signup() {
                 <input
                   type="text"
                   placeholder="Email"
-                  style={{ fontFamily: 'sans-serif', fontSize: '1.2em' }}
+                  style={{ fontFamily: 'sans-serif'}}
                   value={email}
                   onChange={(e) => setemail(e.target.value)}
                 />
@@ -61,7 +61,7 @@ function Signup() {
                 <ion-icon name="key-outline"></ion-icon>
                 <input
                   type="password"
-                  style={{ fontFamily: 'sans-serif', fontSize: '1.2em' }}
+                  style={{ fontFamily: 'sans-serif'}}
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -72,14 +72,14 @@ function Signup() {
                 <ion-icon name="key-outline"></ion-icon>
                 <input
                   type="password"
-                  style={{ fontFamily: 'sans-serif', fontSize: '1.2em' }}
+                  style={{ fontFamily: 'sans-serif'}}
                   placeholder="Confirm Password"
                   value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                   id="password"
                 />
               </div>
-              <button onClick={handleRegister} style={{ fontFamily: 'sans-serif', fontSize: '1.5em' }} className="btnlogin" id="register" >
+              <button onClick={handleRegister} style={{ fontFamily: 'sans-serif', fontSize: '1.2em'}} className="btnlogin" id="register" >
                 Register
               </button>
               <div className="login-register">

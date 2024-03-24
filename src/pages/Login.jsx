@@ -47,7 +47,7 @@ function Login() {
                 <input
                   type="text"
                   placeholder="Email"
-                  style={{ fontFamily: 'sans-serif', fontSize: '1.2em' }}
+                  style={{ fontFamily: 'sans-serif'}}
                   value={email}
                   onChange={(e) => setemail(e.target.value)}
                 />
@@ -56,7 +56,7 @@ function Login() {
                 <ion-icon name="key-outline"></ion-icon>
                 <input
                   type="password"
-                  style={{ fontFamily: 'sans-serif', fontSize: '1.2em' }}
+                  style={{ fontFamily: 'sans-serif'}}
                   placeholder="Password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
@@ -64,7 +64,7 @@ function Login() {
                 />
               </div>
               
-              <button onClick={handleLogin} style={{ fontFamily: 'sans-serif', fontSize: '1.5em' }} className="btnlogin" id="register" >
+              <button onClick={handleLogin} style={{ fontFamily: 'sans-serif', fontSize: '1.2em'}} className="btnlogin" id="register" >
                 Log In
               </button>
               <div className="login-register">

@@ -6,6 +6,7 @@ import profile from '../icons/profile.png';
 import Post from '../components/createPost.jsx';
 import CreatePost from '../components/createPost.jsx';
 import FeedElement from '../components/feedElement.jsx';
+import { Link } from 'react-router-dom';
 
 
 
@@ -58,7 +59,7 @@ function Home() {
                     <li className="logo-holder">
                         <a className="nav-link">
                             <img  className='homepage-logo' src={logo} draggable="false" />
-                            <span className="linktext">Fizi<a className='blue-text'>Q</a> Fit For All</span>
+                            <span className="linktext">Fizi<a className='blue-text'>Q</a> | Fit For All</span>
                         </a>
                     </li>
 
@@ -84,7 +85,7 @@ function Home() {
                     <li className="nav-item">
                         <a  className="nav-link">
                             <img className='nav-bar-icons' src={dumbbell} alt="" />
-                            <span className="linktext">Workouts</span>
+                            <Link to= '/workouts' className="linktext">Workouts</Link>
                         </a>
                     </li>
                     

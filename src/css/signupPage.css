@@ -80,3 +80,8 @@ input{
     background: rgb(225, 225, 225);
     color:#162938;
 }   
+
+.logo{
+    width: 100px;
+    height: 100px;
+}

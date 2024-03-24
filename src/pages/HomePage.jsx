@@ -1,5 +1,7 @@
 import React from 'react'
 import '../css/homePage.css'
+import logo from '../icons/logo.png';
+
 
 
 function Home() {
@@ -9,15 +11,14 @@ function Home() {
         <div className="navbar">
           <div className="navbar-elements-holder">
           <ul className="navbar-nav">
-                    <li className="logo">
+                    <li className="logo-holder">
                         <a className="nav-link">
-                            <img id="mainicon" src="" draggable="false" />
-                            <span className="linktext">Air Music</span>
+                            <img className='homepage-logo' src={logo} draggable="false" />
                         </a>
                     </li>
 
                     <li className="nav-item">
-                        <a onClick={homeButtonClick} className="nav-link">
+                        <a  className="nav-link">
 
                             <i id="navicons" className="fa-solid fa-house fa-2x"></i>
                             <span className="linktext">Home</span>
@@ -25,30 +26,30 @@ function Home() {
                     </li>
 
                     <li className="nav-item">
-                        <a onClick={searchBarHighlightClick} className="nav-link">
+                        <a className="nav-link">
 
                             <i id="navicons" className="fa-solid fa-magnifying-glass fa-2x"></i>
-                            <span className="linktext">Search</span>
+                            <span className="linktext">Explore</span>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a onClick={playlist} className="nav-link">
+                        <a  className="nav-link">
 
                             <i id="navicons" className="fa-solid fa-music fa-2x"></i>
-                            <span className="linktext">Playlists</span>
+                            <span className="linktext">Workouts</span>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">
+                        <a className="nav-link">
 
                             <i id="navicons" className="fa-solid fa-heart fa-2x"></i>
-                            <span className="linktext">Liked Songs</span>
+                            <span className="linktext">Profile</span>
                         </a>
                     </li>
                     <li className="nav-item">
-                        <a onClick={togglePlaylist} className="nav-link">
+                        <a  className="nav-link">
                             <i id="navicons" className="fa-solid fa-plus fa-2x"></i>
-                            <span className="linktext">Create Playlist</span>
+                            <span className="linktext">Create Workout</span>
                         </a>
                     </li>
                 </ul>

@@ -13,6 +13,8 @@ body{
     background-color: green;
     height: 100vh;
     width: 25vw;
+    display: flex;
+    justify-content: center;
 }
 .feed-container{
     background-color: blue;
@@ -24,4 +26,25 @@ body{
     background-color: yellow;
     height: 100vh;
     width: 30vw;
+}
+.homepage-logo{
+    width: 75px;
+    height: 75px;
+}
+.navbar-elements-holder{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.navbar-nav{
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    list-style: none;
+
 }

@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
-import '../css/workoutsPage.css';
-import logo from '../icons/logo.png';
-import dumbbell from '../icons/dumbbell.png';
-import profile from '../icons/profile.png';
+import React, { useState, useEffect } from "react";
+import "../css/workoutsPage.css";
+import logo from "../icons/logo.png";
+import dumbbell from "../icons/dumbbell.png";
+import profile from "../icons/profile.png";
+import axios from "axios";
+import WorkoutElement from "../components/workoutElement";
 
 function WorkoutsPage() {
-  const [selectedFilter, setSelectedFilter] = useState('');
-
+  const [selectedFilter, setSelectedFilter] = useState("");
+  const [workouts, setWorkouts] = useState([]);
   const handleFilterChange = (event) => {
     setSelectedFilter(event.target.value);
   };
+  useEffect(() => {
+    axios
+      .get("http://localhost:443/api/get-all-workouts")
+      .then((response) => {
+        console.log(response.data);
+        setWorkouts(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   return (
     <>
@@ -99,66 +112,66 @@ function WorkoutsPage() {
         </div>
         <div className="feed-container">
           <div className="your-feed-header">
-            <h1 className='all-workouts-header'>All Workouts</h1>
-            <button className='filter-button'>filter</button>
+            <h1 className="all-workouts-header">All Workouts</h1>
+            <button className="filter-button">filter</button>
           </div>
           <div className="feed-posts">
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
-            <div className="test"></div>
+            {Object.values(workouts).map((workout, index) => (
+              <div key={index}>
+                <h2>{workout.name}</h2>
+                {workout.workouts.map((subWorkout, subIndex) => (
+                  <div key={`${index}-${subIndex}`}>
+                    <h3>{""}</h3>
+                    <WorkoutElement {...subWorkout} />
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
         </div>
-        <div className="workouts-preview">
+        {/* <div className="workouts-preview">
           <div className="beginner-workouts-header">
             <h1>Create a workout split</h1>
           </div>
-            <div className='workout-creator-menu'>
-              <div className="difficulty">
-                <select value={selectedFilter} onChange={handleFilterChange}>
-                  <option value="" disabled selected>
-                    Difficulty
-                  </option>
-                  <option value="beginner">Beginner</option>
-                  <option value="intermediate">Intermediate</option>
-                  <option value="advanced">Advanced</option>
-                </select>
-              </div>
-              <div className="type">
-                <select value={selectedFilter} onChange={handleFilterChange}>
-                  <option value="" disabled selected>
-                    Type
-                  </option>
-                  <option value="powerlifting">Powerlifting</option>
-                  <option value="bodybuilding">Bodybuilding</option>
-                  <option value="olympic-lifting">Olympic Lifting</option>
-                  <option value="calisthenics">Calisthenics</option>
-                </select>
-              </div>
-              <div className="numberOfDays">
-                <select value={selectedFilter} onChange={handleFilterChange}>
-                  <option value="" disabled selected>
-                    Number Of Days
-                  </option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                </select>
-              </div>
+          <div className="workout-creator-menu">
+            <div className="difficulty">
+              <select value={selectedFilter} onChange={handleFilterChange}>
+                <option value="" disabled selected>
+                  Difficulty
+                </option>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+              </select>
             </div>
+            <div className="type">
+              <select value={selectedFilter} onChange={handleFilterChange}>
+                <option value="" disabled selected>
+                  Type
+                </option>
+                <option value="powerlifting">Powerlifting</option>
+                <option value="bodybuilding">Bodybuilding</option>
+                <option value="olympic-lifting">Olympic Lifting</option>
+                <option value="calisthenics">Calisthenics</option>
+              </select>
+            </div>
+            <div className="numberOfDays">
+              <select value={selectedFilter} onChange={handleFilterChange}>
+                <option value="" disabled selected>
+                  Number Of Days
+                </option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+              </select>
+            </div>
+          </div>
           <a className="view-all-workouts">
             <button className="view-all-workouts-button">Create</button>
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -213,6 +213,19 @@ app.get("/api/get-workouts", async(req, res)=>{
     }
 });
 
+app.get("/api/get-all-workouts", async(req, res)=>{
+    try{
+        const workouts = await Workout.find();
+        if(workouts.length === 0){
+            return res.status(404).send("No workouts found.");
+        }
+        res.status(200).send(workouts);
+    } catch(err){
+        console.log(err);
+        res.status(500).send("Internal Server Error");
+    }
+});
+
 app.get("/api/get-workout/:id", async(req, res)=>{
     try{
         const workout = await Workout.findById(req.params.id);
